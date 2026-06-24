@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Регистрация · Пассажирам.РФ. Обучение перевозкам: автобус, электробус, трамвай
+</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="app app-auth">
+        <div class="auth-container">
+            <div class="auth-header">
+                <h1 class="auth-title">Пассажирам.РФ</h1>
+                <p class="auth-subtitle">Создайте аккаунт для записи</p>
+            </div>
+
+            <form id="registerForm" class="auth-form">
+                <div class="form-group">
+                    <label for="regLogin"><i class="fas fa-user-tag"></i> Логин *</label>
+                    <input type="text" id="regLogin" class="form-control" placeholder="минимум 6 символов, латиница и цифры" required>
+                    <span class="hint">Только латинские буквы и цифры, минимум 6 символов</span>
+                    <div class="error-text" id="regLoginError"></div>
+                </div>
+                <div class="form-group">
+                    <label for="regPassword"><i class="fas fa-key"></i> Пароль *</label>
+                    <input type="password" id="regPassword" class="form-control" placeholder="минимум 8 символов" required>
+                    <span class="hint">Минимум 8 символов</span>
+                    <div class="error-text" id="regPasswordError"></div>
+                </div>
+                <div class="form-group">
+                    <label for="regFullName"><i class="fas fa-user"></i> ФИО *</label>
+                    <input type="text" id="regFullName" class="form-control" placeholder="Иванов Иван Иванович" required>
+                    <div class="error-text" id="regFullNameError"></div>
+                </div>
+                <div class="form-group">
+                    <label for="regBirth"><i class="fas fa-calendar-day"></i> Дата рождения *</label>
+                    <input type="date" id="regBirth" class="form-control" required>
+                    <div class="error-text" id="regBirthError"></div>
+                </div>
+                <div class="form-group">
+                    <label for="regPhone"><i class="fas fa-phone"></i> Телефон *</label>
+                    <input type="tel" id="regPhone" class="form-control" placeholder="+7 (999) 123-45-67" required>
+                    <div class="error-text" id="regPhoneError"></div>
+                </div>
+                <div class="form-group">
+                    <label for="regEmail"><i class="fas fa-envelope"></i> E-mail *</label>
+                    <input type="email" id="regEmail" class="form-control" placeholder="example@mail.ru" required>
+                    <div class="error-text" id="regEmailError"></div>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block">
+                    <i class="fas fa-user-plus"></i> Зарегистрироваться
+                </button>
+            </form>
+
+            <div class="auth-footer">
+                <p>Уже есть аккаунт? <a href="login.html" class="nav-link">Войти</a></p>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

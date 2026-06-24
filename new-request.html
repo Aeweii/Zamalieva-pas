@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Новая заявка · Пассажирам.РФ. Обучение перевозкам: автобус, электробус, трамвай
+</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="app">
+        <header class="app-header app-header-slim">
+            <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> Назад</a>
+            <h1 class="app-title-small">Новая заявка</h1>
+            <div></div>
+        </header>
+
+        <section class="request-form-section">
+            <p class="text-muted form-description">Заполните форму для записи на обучение</p>
+            
+            <form id="requestForm" class="request-form">
+                <div class="form-group">
+                    <label for="reqTransport"><i class="fas fa-bus"></i> Вид транспорта *</label>
+                    <select id="reqTransport" class="form-control" required>
+                        <option value="">Выберите...</option>
+                        <option value="Автобус">Автобус</option>
+                        <option value="Электробус">Электробус</option>
+                        <option value="Трамвай">Трамвай</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="reqDate"><i class="fas fa-calendar-alt"></i> Дата начала *</label>
+                    <input type="date" id="reqDate" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="reqPayment"><i class="fas fa-credit-card"></i> Способ оплаты *</label>
+                    <select id="reqPayment" class="form-control" required>
+                        <option value="">Выберите...</option>
+                        <option value="По QR-коду">По QR-коду</option>
+                        <option value="Картой МИР">Картой МИР</option>
+                        <option value="Постоплата в офисе">Постоплата в офисе</option>
+                    </select>
+                </div>
+
+                <button type="submit" class="btn btn-primary btn-block">
+                    <i class="fas fa-paper-plane"></i> Отправить заявку
+                </button>
+            </form>
+        </section>
+    </div>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Личный кабинет · Пассажирам.РФ. Обучение перевозкам: автобус, электробус, трамвай
+</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="app app-profile">
+        <!-- Шапка -->
+        <header class="app-header app-header-slim">
+            <a href="index.html" class="back-link"><i class="fas fa-arrow-left"></i> На главную</a>
+            <h1 class="app-title-small">Личный кабинет</h1>
+            <button id="logoutBtn" class="btn-logout" title="Выйти">
+                <i class="fas fa-sign-out-alt"></i>
+            </button>
+        </header>
+
+        <!-- Информация о пользователе -->
+        <div class="profile-info">
+            <div class="profile-avatar">
+                <i class="fas fa-user-circle"></i>
+            </div>
+            <div class="profile-details">
+                <h2 id="profileName">Пользователь</h2>
+                <p id="profileLogin"><i class="fas fa-user-tag"></i> Логин: </p>
+                <p id="profileEmail"><i class="fas fa-envelope"></i> </p>
+                <p id="profilePhone"><i class="fas fa-phone"></i> </p>
+            </div>
+        </div>
+
+        <!-- Действия -->
+        <div class="action-bar">
+            <a href="new-request.html" class="btn btn-primary">
+                <i class="fas fa-plus-circle"></i> Новая заявка
+            </a>
+            <a href="admin.html" class="btn btn-outline" id="adminLink" style="display:none;">
+                <i class="fas fa-user-shield"></i> Админка
+            </a>
+        </div>
+
+        <!-- Список заявок -->
+        <section class="requests-section">
+            <h2 class="section-title"><i class="fas fa-list-ul"></i> Мои заявки</h2>
+            <div id="requestsList">
+                <!-- Сюда рендерятся заявки -->
+            </div>
+        </section>
+
+        <!-- Футер -->
+        <footer class="app-footer">
+            <p>© 2026 Пассажирам.РФ · Все права защищены</p>
+        </footer>
+    </div>
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

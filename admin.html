@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Администрирование · Пассажирам.РФ. Обучение перевозкам: автобус, электробус, трамвай
+</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="app app-admin app-admin-compact">
+        <!-- Шапка админки -->
+        <header class="app-header admin-header admin-header-compact">
+            <div class="header-content">
+                <div>
+                    <h1 class="app-title-small"><i class="fas fa-user-shield" style="color: #0d47a1;"></i> Админ</h1>
+                </div>
+                <div class="admin-user-info">
+                    <span id="adminUser"><i class="fas fa-user-cog"></i> Администратор</span>
+                    <button id="adminLogoutBtn" class="btn-logout" title="Выйти">
+                        <i class="fas fa-sign-out-alt"></i>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Фильтры и поиск (компактные) -->
+        <div class="filter-bar filter-bar-compact">
+            <div class="filter-group">
+                <i class="fas fa-filter"></i>
+                <select id="filterStatus">
+                    <option value="all">Все статусы</option>
+                    <option value="Новая">Новая</option>
+                    <option value="Идет обучение">Идет обучение</option>
+                    <option value="Обучение завершено">Обучение завершено</option>
+                </select>
+            </div>
+            <div class="filter-group">
+                <i class="fas fa-search"></i>
+                <input type="text" id="filterSearch" placeholder="Поиск...">
+            </div>
+        </div>
+
+        <!-- Таблица (компактная) -->
+        <div class="table-wrap table-wrap-compact">
+            <table class="table-compact">
+                <thead>
+                    <tr>
+                        <th onclick="adminSort('userLogin')">Пользователь <i class="fas fa-sort"></i></th>
+                        <th onclick="adminSort('transport')">Транспорт <i class="fas fa-sort"></i></th>
+                        <th onclick="adminSort('date')">Дата <i class="fas fa-sort"></i></th>
+                        <th onclick="adminSort('status')">Статус <i class="fas fa-sort"></i></th>
+                        <th>Действие</th>
+                        <th>Отзыв</th>
+                    </tr>
+                </thead>
+                <tbody id="adminTableBody">
+                    <!-- Рендерится через JS -->
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Пагинация (компактная) -->
+        <div class="pagination pagination-compact" id="pagination"></div>
+
+        <div class="admin-footer admin-footer-compact">
+            <a href="index.html" class="nav-link"><i class="fas fa-arrow-left"></i> На главную</a>
+        </div>
+    </div>
+    <script src="assets/js/app.js"></script>
+</body>
+</html>

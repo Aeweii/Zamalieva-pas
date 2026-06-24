@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Главная страница · Пассажирам.РФ. Обучение перевозкам: автобус, электробус, трамвай
+</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,500;14..32,600;14..32,700&family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <div class="app">
+        <!-- Шапка -->
+        <header class="app-header">
+            <div class="header-content">
+                <div>
+                    <h1 class="app-title">Пассажирам.РФ</h1>
+                    <p class="app-subtitle">Обучение водителей пассажирского транспорта</p>
+                </div>
+                <div class="header-actions">
+                    <a href="login.html" class="btn btn-sm btn-outline" id="loginBtn">
+                        <i class="fas fa-sign-in-alt"></i> Войти
+                    </a>
+                    <a href="profile.html" class="btn btn-sm btn-primary" id="profileBtn" style="display:none;">
+                        <i class="fas fa-user"></i> Кабинет
+                    </a>
+                </div>
+            </div>
+        </header>
+
+        <!-- Слайдер -->
+        <div class="slider-container" id="mainSlider">
+            <div class="slider-track">
+                <img src="assets/image/bus.jpg" class="slider-slide" alt="Обучение автобусу">
+                <img src="assets/image/avtobus.jpg" class="slider-slide" alt="Обучение электробусу">
+                <img src="assets/image/tramvai.jpg" class="slider-slide" alt="Обучение трамваю">
+                <img src="assets/image/bus2.jpg" class="slider-slide" alt="Пассажирам.РФ">
+            </div>
+            <button class="slider-btn prev" aria-label="Предыдущий слайд"><i class="fas fa-chevron-left"></i></button>
+            <button class="slider-btn next" aria-label="Следующий слайд"><i class="fas fa-chevron-right"></i></button>
+            <div class="slider-dots"></div>
+        </div>
+
+        <!-- Преимущества -->
+        <section class="advantages-section">
+            <h2 class="section-title" style="font-size:16px;margin-bottom:10px;">Почему выбирают нас</h2>
+            <div class="advantages-grid">
+                <div class="advantage-item">
+                    <i class="fas fa-graduation-cap"></i>
+                    <span>Опытные инструкторы</span>
+                </div>
+                <div class="advantage-item">
+                    <i class="fas fa-bus"></i>
+                    <span>Современный транспорт</span>
+                </div>
+                <div class="advantage-item">
+                    <i class="fas fa-clock"></i>
+                    <span>Гибкий график</span>
+                </div>
+                <div class="advantage-item">
+                    <i class="fas fa-certificate"></i>
+                    <span>Официальные документы</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Информация об обучении -->
+        <section class="info-section">
+            <h2 class="section-title"><i class="fas fa-info-circle"></i> Обучение водителей</h2>
+            <div class="info-cards">
+                <div class="info-card">
+                    <div class="info-icon"><i class="fas fa-bus"></i></div>
+                    <h3>Автобусы</h3>
+                    <p>Обучение управлению автобусами всех категорий. Практика на современных автобусах с автоматической и механической коробкой передач.</p>
+                    <span class="info-badge">Категория D</span>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon"><i class="fas fa-bolt"></i></div>
+                    <h3>Электробусы</h3>
+                    <p>Современные электробусы — экологичный транспорт будущего. Освойте управление электробусом с нуля или переподготовка.</p>
+                    <span class="info-badge">Категория D</span>
+                </div>
+                <div class="info-card">
+                    <div class="info-icon"><i class="fas fa-subway"></i></div>
+                    <h3>Трамваи</h3>
+                    <p>Обучение управлению трамваями на городских маршрутах. Теория и практика на действующих линиях с опытными наставниками.</p>
+                    <span class="info-badge">Категория T</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Процесс обучения -->
+        <section class="process-section">
+            <h2 class="section-title"><i class="fas fa-route"></i> Как проходит обучение</h2>
+            <div class="process-steps">
+                <div class="step">
+                    <span class="step-number">1</span>
+                    <div>
+                        <strong>Подача заявки</strong>
+                        <p>Заполните форму на сайте или обратитесь в офис</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <span class="step-number">2</span>
+                    <div>
+                        <strong>Теоретический курс</strong>
+                        <p>Изучение ПДД, устройства транспортного средства, безопасности</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <span class="step-number">3</span>
+                    <div>
+                        <strong>Практическое вождение</strong>
+                        <p>Занятия с инструктором на маршрутах города</p>
+                    </div>
+                </div>
+                <div class="step">
+                    <span class="step-number">4</span>
+                    <div>
+                        <strong>Сдача экзамена</strong>
+                        <p>Получение удостоверения и допуска к работе</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Отзывы -->
+        <section class="reviews-section">
+            <h2 class="section-title"><i class="fas fa-star"></i> Отзывы наших учеников</h2>
+            <div id="userReviews" class="reviews-list">
+                <!-- Рендерится через JS -->
+            </div>
+        </section>
+
+        <!-- Контакты -->
+        <section class="contacts-section">
+            <h2 class="section-title" style="font-size:16px;margin-bottom:10px;"><i class="fas fa-address-card"></i> Контакты</h2>
+            <div class="contacts-grid">
+                <div class="contact-item">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <div>
+                        <strong>Адрес</strong>
+                        <span>г. Москва, ул. Большая Ордынка, д. 15</span>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-phone"></i>
+                    <div>
+                        <strong>Горячая линия</strong>
+                        <a href="tel:+74951234567">+7 (495) 123-45-67</a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <strong>Email</strong>
+                        <a href="mailto:info@passazhiry.ru">info@passazhiry.ru</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Соцсети -->
+        <section class="social-section">
+            <p class="social-label">Мы в соцсетях:</p>
+            <div class="social-links">
+                <a href="#" class="social-link" title="Telegram"><i class="fab fa-odnoklassniki"></i></a>
+                <a href="#" class="social-link" title="VK"><i class="fab fa-vk"></i></a>
+            </div>
+        </section>
+
+        <!-- Футер -->
+        <footer class="app-footer">
+            <p>© 2026 Пассажирам.РФ · Все права защищены</p>
+        </footer>
+    </div>
+
+    <script src="assets/js/app.js"></script>
+</body>
+</html>
